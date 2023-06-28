@@ -1,0 +1,7 @@
+{
+  "name": "ngapp-list",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
