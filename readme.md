@@ -25,3 +25,10 @@ $selectedcolor: red;
 3.修改状态栏颜色
 npm install @capacitor/status-bar
 npx cap sync
+
+StatusBar.setStyle({ style: Style.Light }).then(()=>{
+      console.log(123);
+});
+StatusBar.setBackgroundColor({
+      color:'#f7f7f7'
+})
