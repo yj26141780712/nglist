@@ -1,0 +1,22 @@
+$selectedcolor: red;
+// 重写激活样式
+:host ::ng-deep {
+    .tab-selected {
+        color: $selectedcolor;
+    }
+
+    .tab-has-icon:hover{
+        ion-icon{
+            color: $selectedcolor;
+        }
+    }
+    .tab-has-label:hover{
+        ion-label{
+            color: $selectedcolor;
+        }
+    }
+}
+
+.ion-no-border {
+    border-color: transparent;
+}
