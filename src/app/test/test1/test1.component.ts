@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActionSheet, ActionSheetButtonStyle } from '@capacitor/action-sheet';
+
 
 @Component({
   selector: 'app-test1',
