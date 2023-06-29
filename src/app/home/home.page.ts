@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { RefresherCustomEvent } from '@ionic/angular';
+import { Platform, RefresherCustomEvent } from '@ionic/angular';
 import { MessageComponent } from '../message/message.component';
 
 import { DataService, Message } from '../services/data.service';
@@ -11,6 +11,7 @@ import { DataService, Message } from '../services/data.service';
 })
 export class HomePage {
   private data = inject(DataService);
+  private platform = inject(Platform);
   constructor() {}
 
   refresh(ev: any) {
@@ -21,5 +22,10 @@ export class HomePage {
 
   getMessages(): Message[] {
     return this.data.getMessages();
+  }
+
+  getBackButtonText() {
+    const isIos = this.platform.is('ios')
+    return isIos ? 'Inbox' : '';
   }
 }
