@@ -32,3 +32,5 @@ StatusBar.setStyle({ style: Style.Light }).then(()=>{
 StatusBar.setBackgroundColor({
       color:'#f7f7f7'
 })
+
+#测试
